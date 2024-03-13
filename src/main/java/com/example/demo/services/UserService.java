@@ -25,5 +25,9 @@ public class UserService {
 		return obj.get();
 		//o método .get() no objeto optional serve para pegar o resultado armazenado
 	}
+	
+	public User insert(User obj) {
+		return userRepository.save(obj);
+	}
 
 }
